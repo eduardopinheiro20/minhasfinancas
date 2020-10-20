@@ -1,6 +1,7 @@
 package com.pinheiro.minhasfinancas.api.resource;
 
 import com.pinheiro.minhasfinancas.api.dto.UsuarioDto;
+import com.pinheiro.minhasfinancas.exception.ErroAutenticacao;
 import com.pinheiro.minhasfinancas.exception.RegraNegocioException;
 import com.pinheiro.minhasfinancas.model.entity.Usuario;
 import com.pinheiro.minhasfinancas.service.UsuarioService;
@@ -16,6 +17,18 @@ public class UsuarioController {
 
     public UsuarioController(UsuarioService usuarioService) {
         this.usuarioService = usuarioService;
+    }
+
+    @PostMapping("/autenticar")
+    public ResponseEntity autenticar(@RequestBody UsuarioDto usuarioDto) {
+
+        try {
+            Usuario autenticado = usuarioService.autenticar(usuarioDto.getEmail(), usuarioDto.getSenha());
+            return ResponseEntity.ok(autenticado);
+        } catch (ErroAutenticacao e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+
     }
 
     @PostMapping

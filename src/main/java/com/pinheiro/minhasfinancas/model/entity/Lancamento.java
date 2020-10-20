@@ -22,6 +22,9 @@ public class Lancamento {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "descricao")
+    private  String descricao;
+
     @Column(name = "mes")
     private Integer mes;
 

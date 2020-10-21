@@ -3,6 +3,7 @@ package com.pinheiro.minhasfinancas.service.impl;
 import com.pinheiro.minhasfinancas.exception.RegraNegocioException;
 import com.pinheiro.minhasfinancas.model.entity.Lancamento;
 import com.pinheiro.minhasfinancas.model.enums.StatusLancamento;
+import com.pinheiro.minhasfinancas.model.enums.TipoLancamento;
 import com.pinheiro.minhasfinancas.model.repository.LancamentoRepository;
 import com.pinheiro.minhasfinancas.service.LancamentoService;
 import com.sun.org.apache.regexp.internal.RESyntaxException;
@@ -14,6 +15,7 @@ import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class LancamentoServiceImpl implements LancamentoService {
@@ -92,5 +94,28 @@ public class LancamentoServiceImpl implements LancamentoService {
         if (lancamento.getTipo() == null) {
             throw new RegraNegocioException("Informe um Tipo de Lançamento");
         }
+    }
+
+    @Override
+    public Optional<Lancamento> oberPorId(Long id) {
+        return lancamentoRepository.findById(id);
+    }
+
+    @Override
+    @Transactional
+    public BigDecimal obterSaldoPorUsuario(Long id) {
+
+        BigDecimal receitas = lancamentoRepository.obterSaldoPorTipoLancamentoUsuario(id, TipoLancamento.RECEITA);
+        BigDecimal despesas = lancamentoRepository.obterSaldoPorTipoLancamentoUsuario(id, TipoLancamento.DESPESA);
+
+        if (receitas == null) {
+            receitas = BigDecimal.ZERO;
+
+        }
+        if (despesas == null) {
+            despesas = BigDecimal.ZERO;
+        }
+
+        return receitas.subtract(despesas);
     }
 }

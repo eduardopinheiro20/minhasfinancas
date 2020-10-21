@@ -4,20 +4,23 @@ import com.pinheiro.minhasfinancas.api.dto.UsuarioDto;
 import com.pinheiro.minhasfinancas.exception.ErroAutenticacao;
 import com.pinheiro.minhasfinancas.exception.RegraNegocioException;
 import com.pinheiro.minhasfinancas.model.entity.Usuario;
+import com.pinheiro.minhasfinancas.service.LancamentoService;
 import com.pinheiro.minhasfinancas.service.UsuarioService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+import java.util.Optional;
+
 @RestController
-@RequestMapping("/api/usuario")
-public class UsuarioController {
+@RequestMapping("/api/usuarios")
+@RequiredArgsConstructor
+public class UsuarioController<ReponseEntity> {
 
-    private UsuarioService usuarioService;
-
-    public UsuarioController(UsuarioService usuarioService) {
-        this.usuarioService = usuarioService;
-    }
+    private final UsuarioService usuarioService;
+    private final LancamentoService lancamentoService;
 
     @PostMapping("/autenticar")
     public ResponseEntity autenticar(@RequestBody UsuarioDto usuarioDto) {
@@ -46,4 +49,18 @@ public class UsuarioController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+
+    @GetMapping("{id}/saldo")
+    public ReponseEntity obterSaldo( @PathVariable("id") Long id){
+
+        Optional<Usuario> usuario = usuarioService.obterPorId(id);
+
+        if(!usuario.isPresent()){
+            return (ReponseEntity) new ResponseEntity( HttpStatus.NOT_FOUND );
+        }
+
+        BigDecimal saldo = lancamentoService.obterSaldoPorUsuario(id);
+        return (ReponseEntity) ResponseEntity.ok(saldo);
+    }
+
 }

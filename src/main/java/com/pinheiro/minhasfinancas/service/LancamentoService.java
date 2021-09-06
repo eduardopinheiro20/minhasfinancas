@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface LancamentoService {
 
-
     Lancamento salvar(Lancamento pLancamento);
 
     Lancamento atualizar(Lancamento  pLancamento);

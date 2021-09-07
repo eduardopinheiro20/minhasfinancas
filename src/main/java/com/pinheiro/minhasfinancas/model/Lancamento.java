@@ -4,12 +4,14 @@ import com.pinheiro.minhasfinancas.enums.StatusLancamento;
 import com.pinheiro.minhasfinancas.enums.TipoLancamento;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Data

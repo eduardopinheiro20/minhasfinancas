@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class LancamentoServiceImpl implements LancamentoService {
@@ -88,5 +89,10 @@ public class LancamentoServiceImpl implements LancamentoService {
         if(pLancamento.getTipoLancamento() == null) {
             throw new RegraNegocioException("Informe um Tipo de Lançamento.");
         }
+    }
+
+    @Override
+    public Optional<Lancamento> getById(Long id) {
+        return lancamentoRepository.findById(id);
     }
 }

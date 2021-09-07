@@ -4,6 +4,7 @@ import com.pinheiro.minhasfinancas.enums.StatusLancamento;
 import com.pinheiro.minhasfinancas.model.Lancamento;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface LancamentoService {
 
@@ -19,4 +20,5 @@ public interface LancamentoService {
 
     void validar(Lancamento pLancamento);
 
+    Optional<Lancamento> getById(Long id);
 }

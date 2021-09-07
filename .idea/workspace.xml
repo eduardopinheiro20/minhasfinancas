@@ -11,8 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6441bba0-a897-43c5-a6de-837811967168" name="Default Changelist" comment="Criacao dos sevices Usuario e criacao do primeiro test de integracao">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/dto/LancamentoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/model/Lancamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/model/Lancamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/LancamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/LancamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/LancamentoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/LancamentoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,15 +210,19 @@
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="400" y="354" width="645" height="396" key="#com.intellij.fileTypes.FileTypeChooser/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627355934551" />
-    <state x="584" y="257" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1630884261644">
+    <state x="584" y="257" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1630973040685">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="584" y="257" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627432117737" />
-    <state x="584" y="257" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630884261644" />
+    <state x="584" y="257" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630973040685" />
     <state x="198" y="476" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1627356043347">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="198" y="476" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627356043347" />
+    <state x="302" y="27" width="998" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1630974324247">
+      <screen x="39" y="27" width="2521" height="1053" />
+    </state>
+    <state x="302" y="27" width="998" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630974324247" />
     <state x="1508" y="306" key="#xdebugger.evaluate" timestamp="1628171135319">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
@@ -270,11 +280,11 @@
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="217" y="187" key="SettingsEditor/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627355289669" />
-    <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1630964158262">
+    <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1630967465448">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1630536724565" />
-    <state x="323" y="288" key="Vcs.Push.Dialog.v2/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630964158262" />
+    <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630967465448" />
     <state x="542" y="329" width="817" height="440" key="chooseDestDirectoryDialog" timestamp="1627435860509">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
@@ -291,10 +301,11 @@
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="355" y="340" width="736" height="423" key="git4idea.merge.GitPullDialog/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627354059206" />
-    <state x="528" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1628552045644">
+    <state x="528" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1630969561837">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="528" y="257" width="672" height="678" key="search.everywhere.popup/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628552045644" />
+    <state x="528" y="257" width="672" height="678" key="search.everywhere.popup/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630969561836" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

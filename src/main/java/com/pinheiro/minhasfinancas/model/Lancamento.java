@@ -3,6 +3,7 @@ package com.pinheiro.minhasfinancas.model;
 import com.pinheiro.minhasfinancas.enums.StatusLancamento;
 import com.pinheiro.minhasfinancas.enums.TipoLancamento;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
@@ -13,8 +14,10 @@ import java.time.LocalDate;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Table( name = "lancamento", schema = "financas")
 @Entity
 @Data
+@Builder
 public class Lancamento {
 
     @Id
@@ -34,10 +37,10 @@ public class Lancamento {
     private LocalDate dataCadastro;
 
     @Enumerated(value = EnumType.STRING)
-    private TipoLancamento tipoLancamento;
+    private TipoLancamento tipo;
 
     @Enumerated(value = EnumType.STRING)
-    private StatusLancamento statusLancamento;
+    private StatusLancamento status;
 
     private String descricao;
 

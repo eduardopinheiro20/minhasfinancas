@@ -10,7 +10,7 @@ public interface LancamentoService {
 
     Lancamento salvar(Lancamento pLancamento);
 
-    Lancamento atualizar(Lancamento  pLancamento);
+    Lancamento atualizar(Lancamento pLancamento);
 
     void deletar(Lancamento pLancamento);
 

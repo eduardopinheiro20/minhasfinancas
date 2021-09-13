@@ -27,7 +27,7 @@ public class LancamentoServiceImpl implements LancamentoService {
     @Transactional
     public Lancamento salvar(final Lancamento pLancamento) {
         validar(pLancamento);
-        pLancamento.setStatusLancamento(StatusLancamento.PEDENTE);
+        pLancamento.setStatus(StatusLancamento.PEDENTE);
         return lancamentoRepository.save(pLancamento);
     }
 
@@ -59,7 +59,7 @@ public class LancamentoServiceImpl implements LancamentoService {
 
     @Override
     public void atualizarStatus(final Lancamento pLancamento, final StatusLancamento status) {
-        pLancamento.setStatusLancamento(status);
+        pLancamento.setStatus(status);
         atualizar(pLancamento);
     }
 
@@ -78,7 +78,7 @@ public class LancamentoServiceImpl implements LancamentoService {
             throw new RegraNegocioException("Informe um Ano Valido.");
         }
 
-        if(pLancamento.getUsuario() == null || pLancamento.getUsuario().getId() == null) {
+        if(pLancamento.getUsuario()== null || pLancamento.getUsuario().getId() == null) {
             throw new RegraNegocioException("Informe um Usuário.");
         }
 
@@ -86,7 +86,7 @@ public class LancamentoServiceImpl implements LancamentoService {
             throw new RegraNegocioException("Informe um Valor Valído.");
         }
 
-        if(pLancamento.getTipoLancamento() == null) {
+        if(pLancamento.getTipo() == null) {
             throw new RegraNegocioException("Informe um Tipo de Lançamento.");
         }
     }

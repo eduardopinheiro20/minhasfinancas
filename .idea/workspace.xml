@@ -11,14 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6441bba0-a897-43c5-a6de-837811967168" name="Default Changelist" comment="Criacao dos sevices Usuario e criacao do primeiro test de integracao">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/dto/LancamentoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/dto/LancamentoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/dto/LancamentoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/model/Lancamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/model/Lancamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/repository/LancamentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/repository/LancamentoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/LancamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/LancamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/UsuarioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/LancamentoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/LancamentoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,55 +223,68 @@
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="302" y="27" width="998" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630974324247" />
-    <state x="1508" y="306" key="#xdebugger.evaluate" timestamp="1628171135319">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state x="1109" y="467" key="#xdebugger.evaluate" timestamp="1631153784947">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state x="1508" y="306" key="#xdebugger.evaluate/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628171135319" />
+    <state x="1109" y="467" key="#xdebugger.evaluate/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631153784947" />
     <state x="261" y="210" width="924" height="684" key="DBNavigator.ProjectSettingsDialog" timestamp="1627354255513">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="261" y="210" width="924" height="684" key="DBNavigator.ProjectSettingsDialog/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627354255513" />
+    <state width="496" height="506" key="DebuggerActiveHint" timestamp="1631150807873">
+      <screen x="44" y="27" width="2516" height="1053" />
+    </state>
+    <state width="496" height="506" key="DebuggerActiveHint/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631150807873" />
     <state x="511" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1630764270260">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="511" y="310" width="424" height="484" key="FileChooserDialogImpl/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628169855460" />
     <state x="511" y="310" key="FileChooserDialogImpl/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630764270260" />
-    <state width="1443" height="300" key="GridCell.Tab.0.bottom" timestamp="1630764274661">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.0.bottom" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="2475" height="379" key="GridCell.Tab.0.bottom/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628599953855" />
     <state width="1443" height="300" key="GridCell.Tab.0.bottom/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630764274661" />
-    <state width="1443" height="300" key="GridCell.Tab.0.center" timestamp="1630764274661">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.0.bottom/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.0.center" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="2475" height="379" key="GridCell.Tab.0.center/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628599953855" />
     <state width="1443" height="300" key="GridCell.Tab.0.center/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630764274661" />
-    <state width="1443" height="300" key="GridCell.Tab.0.left" timestamp="1630764274661">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.0.center/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.0.left" timestamp="1631230022011">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="2475" height="379" key="GridCell.Tab.0.left/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628599953855" />
     <state width="1443" height="300" key="GridCell.Tab.0.left/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630764274661" />
-    <state width="1443" height="300" key="GridCell.Tab.0.right" timestamp="1630764274661">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.0.left/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022011" />
+    <state width="1503" height="194" key="GridCell.Tab.0.right" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="2475" height="379" key="GridCell.Tab.0.right/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628599953855" />
     <state width="1443" height="300" key="GridCell.Tab.0.right/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630764274661" />
-    <state width="1890" height="359" key="GridCell.Tab.1.bottom" timestamp="1628176529412">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.0.right/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.1.bottom" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="1890" height="359" key="GridCell.Tab.1.bottom/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628176529412" />
-    <state width="1890" height="359" key="GridCell.Tab.1.center" timestamp="1628176529411">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.1.bottom/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.1.center" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="1890" height="359" key="GridCell.Tab.1.center/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628176529411" />
-    <state width="1890" height="359" key="GridCell.Tab.1.left" timestamp="1628176529411">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.1.center/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.1.left" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="1890" height="359" key="GridCell.Tab.1.left/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628176529411" />
-    <state width="1890" height="359" key="GridCell.Tab.1.right" timestamp="1628176529412">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state width="1503" height="194" key="GridCell.Tab.1.left/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
+    <state width="1503" height="194" key="GridCell.Tab.1.right" timestamp="1631230022012">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state width="1890" height="359" key="GridCell.Tab.1.right/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628176529412" />
+    <state width="1503" height="194" key="GridCell.Tab.1.right/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631230022012" />
     <state x="261" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1628172836885">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
@@ -285,6 +298,10 @@
     </state>
     <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1630536724565" />
     <state x="323" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/39.27.2521.1053/448.1080.1366.768@39.27.2521.1053" timestamp="1630967465448" />
+    <state width="774" height="526" key="XDebugger.FullValuePopup" timestamp="1631150799172">
+      <screen x="44" y="27" width="2516" height="1053" />
+    </state>
+    <state width="774" height="526" key="XDebugger.FullValuePopup/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631150799172" />
     <state x="542" y="329" width="817" height="440" key="chooseDestDirectoryDialog" timestamp="1627435860509">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
@@ -293,10 +310,11 @@
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
     <state x="499" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1627356548876" />
-    <state x="947" y="267" width="618" height="522" key="find.popup" timestamp="1628557315461">
-      <screen x="39" y="27" width="2521" height="1053" />
+    <state x="608" y="240" width="977" height="840" key="find.popup" timestamp="1631225795051">
+      <screen x="44" y="27" width="2516" height="1053" />
     </state>
     <state x="947" y="267" width="618" height="522" key="find.popup/39.27.2521.1053/2560.312.1366.768@39.27.2521.1053" timestamp="1628557315461" />
+    <state x="608" y="240" width="977" height="840" key="find.popup/44.27.2516.1053/448.1080.1366.768@44.27.2516.1053" timestamp="1631225795051" />
     <state x="355" y="340" width="736" height="423" key="git4idea.merge.GitPullDialog" timestamp="1627354059206">
       <screen x="39" y="27" width="2521" height="1053" />
     </state>
@@ -316,9 +334,19 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/UsuarioServiceImpl.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/service/impl/LancamentoServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pinheiro/minhasfinancas/controller/LancamentoController.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

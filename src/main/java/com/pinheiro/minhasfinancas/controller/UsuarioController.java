@@ -5,6 +5,7 @@ import com.pinheiro.minhasfinancas.exception.ErroAutenticacaoException;
 import com.pinheiro.minhasfinancas.exception.RegraNegocioException;
 import com.pinheiro.minhasfinancas.model.Usuario;
 import com.pinheiro.minhasfinancas.service.UsuarioService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/usuarios")
+@RequiredArgsConstructor
 public class UsuarioController {
 
-    @Autowired
-    private UsuarioService usuarioService;
+    private final UsuarioService usuarioService;
 
     @PostMapping("/autenticar")
     public ResponseEntity autenticar(@RequestBody UsuarioDto dto) {

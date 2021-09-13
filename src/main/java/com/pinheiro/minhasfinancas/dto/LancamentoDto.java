@@ -1,8 +1,5 @@
 package com.pinheiro.minhasfinancas.dto;
 
-import com.pinheiro.minhasfinancas.enums.StatusLancamento;
-import com.pinheiro.minhasfinancas.enums.TipoLancamento;
-import com.pinheiro.minhasfinancas.model.Usuario;
 import lombok.Builder;
 import lombok.Data;
 
@@ -26,9 +23,9 @@ public class LancamentoDto {
 
     private LocalDate dataCadastro;
 
-    private String tipoLancamento;
+    private String tipo;
 
-    private String statusLancamento;
+    private String status;
 
     private String descricao;
 }
